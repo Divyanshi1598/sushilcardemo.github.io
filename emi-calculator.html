@@ -1,0 +1,811 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sushil Cars</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link href="css/master.css" rel="stylesheet">
+    <!-- SWITCHER -->
+    <link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color1.css" title="color1" media="all" data-default-color="true" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color2.css" title="color2" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color3.css" title="color3" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color4.css" title="color4" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color5.css" title="color5" media="all" />
+    <link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color6.css" title="color6" media="all" />
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/switcher/css/owl.theme.default.min.css">
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #FF5724;
+            border-radius: 1px;
+            border: 0px solid #000000;
+        }
+        
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #FF5724;
+        }
+        
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 0px 0px 0px #000000;
+            background: #FF5724;
+            border-radius: 1px;
+            border: 0px solid #000000;
+        }
+        
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 1px 1px 0px #FFFFFF;
+            border: 2px solid #E3E3E3;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: #000000;
+            cursor: pointer;
+        }
+        
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 5px;
+            cursor: pointer;
+            animate: 0.2s;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+        
+        input[type=range]::-ms-fill-lower {
+            background: #FF5724;
+            border: 0px solid #000000;
+            border-radius: 2px;
+            box-shadow: 0px 0px 0px #000000;
+        }
+        
+        input[type=range]::-ms-fill-upper {
+            background: #FF5724;
+            border: 0px solid #000000;
+            border-radius: 2px;
+            box-shadow: 0px 0px 0px #000000;
+        }
+        
+        input[type=range]::-ms-thumb {
+            margin-top: 1px;
+            box-shadow: 1px 1px 0px #FFFFFF;
+            border: 2px solid #E3E3E3;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: #000000;
+            cursor: pointer;
+        }
+        
+        input[type=range]:focus::-ms-fill-lower {
+            background: #FF5724;
+        }
+        
+        input[type=range]:focus::-ms-fill-upper {
+            background: #FF5724;
+        }
+        
+        .sub-container {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            height: max-content;
+        }
+        
+        .header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .header button {
+            height: max-content;
+            width: max-content;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            font-size: 35px;
+            color: #9088d2;
+        }
+        
+        .header button:hover {
+            cursor: pointer;
+        }
+        
+        .details input {
+            width: 100%;
+        }
+        
+        .detail {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer {
+            text-align: center;
+        }
+        /*----- Styling the sliders ----*/
+        
+        input[type="range"] {
+            margin: 0px 0px 50px 0;
+            width: 100%;
+        }
+        
+        input[type="range"]:focus {
+            outline: none;
+        }
+        
+        .loan-details {
+            padding-top: 50px;
+        }
+        
+        .detail {
+            padding: 10px;
+        }
+        
+        .detail-group {
+            padding: 15px;
+            border: 1px solid #b1b1b1;
+            border-radius: 10px;
+        }
+    </style>
+    </style>
+</head>
+
+<body class="m-detail" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
+    <!-- Loader -->
+    <div id="page-preloader"><span class="spinner"></span></div>
+    <!-- Loader end -->
+    <!-- Start Switcher -->
+    <div class="switcher-wrapper">
+
+        <div class="form_holder">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- End Switcher -->
+
+    <section class="b-modal">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Video</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a_ugz7GoHwY" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--b-modal-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </header>
+    <!--b-topBar-->
+    <nav class="nav_b  navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-xs-3">
+                    <div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
+
+                        <img src="images/logo/logo-1.png">
+                    </div>
+                </div>
+                <div class="col-sm-2 visible-xs" style="margin-left: 200px;">
+                    <div class="b-topBarsocial-wrapper none">
+                        <div class="b-topbar-social">
+                            <a href="#"><span class="fa fa-facebook-square"></span></a>
+
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-youtube-square"></span></a>
+                            <a href="Notification.html" class=" fa fa-bell" style="margin-top : 15px"> <span style="background-color: brown" class=" bg-danger position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
+                              99+
+                             
+                          </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-main-slide" id="nav">
+                            <ul class="navbar-nav-menu">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="submit1.html">SELL A CAR</a></li>
+                                <li><a href="listTableTwo.html">BUY CAR</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="contacts.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="iconsimag" class="col-sm-2 col-md-4  hidden-xs" style=" margin-left: 900px; margin-top: -100px;">
+                    <div class="b-topBarsocial-wrapper">
+                        <div class="b-topbar-social">
+                            <a href="https://www.facebook.com/profile.php?id=100077481055938"><span class="fa fa-facebook-square"></span></a>
+
+                            <a href="https://www.instagram.com/sushilcarbazzar/"><span class="fa fa-instagram"></span></a>
+                            <a href="https://www.youtube.com/@sushilcarbazzar5502"><span class="fa fa-youtube-square"></span></a>
+
+                            <a href="Notification.html" class=" fa fa-bell" style="margin-top : 15px"> <span style="background-color: brown" class=" bg-danger position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">
+                                  99+
+                                 
+                              </span>
+                            </a>
+                            <!-- <a class="dropdown " href="" style="margin-top : -30px; margin-left: 150px; width:100px;">
+                              <i style="background-color: black;" class="fa fa-user  dropdown-toggle bg-black" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                          <li><a class="dropdown-item" href="#">Cars Insurence</a></li>
+                                          <li><a class="dropdown-item" href="#">Cars Insurence</a></li>
+                                          <li><a class="dropdown-item" href="#">Create New Profile</a></li>
+                                      </ul>
+                              </i>
+                          </a> -->
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!--b-nav-->
+
+
+    <section class="b-pageHeader">
+        <div class="container">
+            <h1 class="wow zoomInLeft" data-wow-delay="0.5s">Easy EMI</h1>
+        </div>
+    </section>
+    <!--b-pageHeader-->
+    <div class="b-breadCumbs s-shadow wow zoomInUp" data-wow-delay="0.5s">
+        <div class="container">
+            <a href="index.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span></a><a href="emi-calculator.html" class="b-breadCumbs__page m-active">Emi Calculator</a>
+        </div>
+    </div>
+    <!--b-breadCumbs-->
+
+    <!--b-infoBar-->
+    <section class="b-detail s-shadow">
+
+
+
+        <div class="container ">
+            <div class="header">
+                <div class="b-detail__main">
+                    <div class="row ">
+                        <div class="col-md-10 col-xs-12">
+
+                            <h1 class="car-emi-title wow zoomInUp" data-wow-delay="0.5s">Car EMI Calculator</h1>
+                            <p style="font-size: 14px;" class=" wow zoomInUp" data-wow-delay="0.5s">The Car Loan EMI Calculator, is the best way to calculate your Equated Monthly Instalments for the loan amount you require. The EMI calculator helps in decision-making and brings you one step closer to your dream car. Now with
+                                all the details in place, all you need to do is apply for a car loan.</p>
+                        </div>
+                        <button>
+                  <i class="bi bi-list"></i>
+                </button>
+                    </div>
+                    <div class="row mt-40">
+                        <div class="col-sm-6">
+                            <div class="detail-group">
+                                <div>
+                                    <div class="detail">
+                                        <p>Loan Amount</p>
+                                        <p id="loan-amt-text" style="color: #6258A8"></p>
+                                    </div>
+                                    <input type="range" id="loan-amount" min="0" max="10000000" step="10000">
+                                </div>
+                                <div>
+                                    <div class="detail">
+                                        <p>Tenure</p>
+                                        <p id="loan-period-text" style="color: #6258A8"></p>
+                                    </div>
+                                    <input type="range" id="loan-period" min="1" max="30" step="1">
+                                </div>
+                                <div>
+                                    <div class="detail">
+                                        <p>Interest Rate (%)</p>
+                                        <p id="interest-rate-text" style="color: #6258A8"></p>
+                                    </div>
+                                    <input type="range" id="interest-rate" min="1" max="15" step="0.5">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-sm-6  breakup">
+                                <canvas id="pieChart"></canvas>
+                                <div class="col-sm-12 text-center"> Your Monthly EMI Payment</div>
+                                <div class="footer">
+                                    <p id="price-container">
+                                        <span id="price">0</span>/mo</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-offset-1">
+                                <div>
+                                    <div class="loan-details">
+                                        <div class='chart-details'>
+                                            <p>Principal</p>
+                                            <p id="cp" style="color: #130F31; font-size: 17px;"></p>
+                                        </div>
+                                        <div class='chart-details'>
+                                            <p>Interest</p>
+                                            <p id="ci" style="color: #130F31; font-size: 17px;"></p>
+                                        </div>
+                                        <div class='chart-details'>
+                                            <p>Total Payable</p>
+                                            <p id="ct" style="color: #130F31; font-size: 17px;"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--                     <div class="col-md-4 col-xs-12">
+                        <aside class="b-detail__main-aside">
+                            
+                           
+                            <div class="b-detail__main-aside-payment wow zoomInUp" data-wow-delay="0.5s">
+                       
+                                <div class="b-detail__main-aside-payment-form">
+                                    <form action="/" method="post">
+                                        <input type="text" placeholder="TOTAL VALUE/LOAN AMOUNT" value="" name="name" />
+                                        <input type="text" placeholder="DOWN PAYMENT" value="" name="name" />
+                                        <div class="s-relative">
+                                            <select name="select" class="m-select">
+                                                <option value="">LOAN TERM IN MONTHS</option>
+                                            </select>
+                                            <span class="fa fa-caret-down"></span>
+                                        </div>
+                                        <input type="text" placeholder="INTEREST RATE IN %" value="" name="name" />
+                                        <button type="submit" class="btn m-btn">ESTIMATE PAYMENT<span class="fa fa-angle-right"></span></button>
+                                    </form>
+                                </div>
+                                <div class="b-detail__main-aside-about-call">
+                                    <span class="fa fa-calculator"></span>
+                                    <div>
+										<i class="fa fa-rupee"></i> 5000 <p>PER MONTH</p>
+                                    </div>
+                                    <p>Total Number of Payments: <span>50</span></p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--b-detail-->
+
+    <!--"b-related-->
+    <section class="b-brands s-shadow">
+        <div class="container">
+            <h5 class="s-titleBg wow zoomInUp" data-wow-delay="0.5s">FIND OUT MORE</h5><br />
+            <h2 class="s-title wow zoomInUp" data-wow-delay="0.5s">BRANDS WE OFFER</h2>
+            <div class="">
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/bmwLogo.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/kia.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/volvo.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/mercLogo.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/audiLogo.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/honda.png" alt="brand" />
+                </div>
+                <div class="b-brands__brand wow rotateIn" data-wow-delay="0.5s">
+                    <img src="media/brands/mg.png" alt="brand" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--b-brands-->
+    <div class="b-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-3 col-xs-6 col-xs-offset-6">
+                    <ul class="b-features__items">
+                        <li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Low Prices, No Haggling</li>
+                        <li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Largest Car Dealership</li>
+                        <li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Multipoint Safety Check</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--b-features-->
+
+    <!--b-info-->
+    <div class="b-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+                        <article class="b-info__aside-article">
+                            <h3>OPENING HOURS</h3>
+                            <div class="b-info__aside-article-item">
+                                <h6>Sales Department</h6>
+                                <p>
+                                    Mon-Sat : 8:00am - 5:00pm<br /> Sunday is closed
+                                </p>
+                            </div>
+
+                        </article>
+                        <article class="b-info__aside-article">
+                            <h3>About us</h3>
+                            <p>
+                                Established in the year 2002, Sushil Car Bazar is one of the top & most trusted dealership for preowned luxury car.In over 17 years of business history we have always had a customer oriented approach & total customer satisfaction has been our motive.
+                            </p>
+                        </article>
+                        <a href="about.html" class="btn m-btn">Read More<span class="fa fa-angle-right"></span></a>
+                    </aside>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="b-info__latest">
+                        <h3>LATEST AUTOS</h3>
+                        <div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+                            <div class="b-info__latest-article-photo m-audi"></div>
+                            <div class="b-info__latest-article-info">
+                                <h6><a href="detail.html">HYUNDAI CRETA S PLUS</a></h6>
+                                <p><span class="fa fa-tachometer"></span> 33,000 KM</p>
+                            </div>
+                        </div>
+                        <div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+                            <div class="b-info__latest-article-photo m-audiSpyder"></div>
+                            <div class="b-info__latest-article-info">
+                                <h6><a href="#">MERCEDES BENZ A-CLASS</a></h6>
+                                <p><span class="fa fa-tachometer"></span> 8,000 KM</p>
+                            </div>
+                        </div>
+                        <div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+                            <div class="b-info__latest-article-photo m-aston"></div>
+                            <div class="b-info__latest-article-info">
+                                <h6><a href="#">VOLVO XC40 T4 R-DESIGN</a></h6>
+                                <p><span class="fa fa-tachometer"></span> 20,000 KM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+                        <p>contact us</p>
+                        <div class="b-info__contacts-item">
+                            <span class="fa fa-map-marker"></span>
+                            <ol>Plot No, 5 Block A1 Sector 11 DLF Faridabad, 11-12 Dividing Road Pincode 121006</ol>
+                            </em>
+                        </div>
+                        <div class="b-info__contacts-item">
+                            <span class="fa fa-map-marker"></span>
+                            <em><ol>Spaze Boulevard, Sector-47, Gurugram</ol>
+                            </em>
+                        </div>
+                        <div class="b-info__contacts-item">
+                            <span class="fa fa-phone"></span>
+                           <ol>+91 92509 22333<br>+91 98114 36332</ol>
+                        </div>
+                        
+                        <div class="b-info__contacts-item">
+                            <span class="fa fa-envelope"></span>
+                            <em><ol>sushilcarbazar@gmail.com</ol></em>
+                        </div>
+                    </address>
+                    <address class="b-info__map">
+                        <a href="contacts.html">Open Location Map</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--b-info-->
+
+    <!--b-footer-->
+    <!--Main-->
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/classie.js"></script>
+    <!--Switcher-->
+    <script src="assets/switcher/js/switcher.js"></script>
+    <!--Owl Carousel-->
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <!--bxSlider-->
+    <script src="assets/bxslider/jquery.bxslider.js"></script>
+    <!-- jQuery UI Slider -->
+    <script src="assets/slider/jquery.ui-slider.js"></script>
+    <!--Theme-->
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/classie.js"></script>
+    <!--Switcher-->
+    <script src="assets/switcher/js/switcher.js"></script>
+    <!--Owl Carousel-->
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <!--bxSlider-->
+    <script src="assets/bxslider/jquery.bxslider.js"></script>
+    <!-- jQuery UI Slider -->
+    <script src="assets/slider/jquery.ui-slider.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: false,
+            slideTransition: 'linear',
+            autoplayTimeout: 2000,
+            autoplaySpeed: 500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <!--Theme-->
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script type="text/javascript">
+        var P, R, N, pie, line;
+        var loan_amt_slider = document.getElementById("loan-amount");
+        var int_rate_slider = document.getElementById("interest-rate");
+        var loan_period_slider = document.getElementById("loan-period");
+
+        // update loan amount
+        loan_amt_slider.addEventListener("input", (self) => {
+            document.querySelector("#loan-amt-text").innerText =
+                parseInt(self.target.value).toLocaleString("en-IN") + " ₹";
+            P = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // update Rate of Interest
+        int_rate_slider.addEventListener("input", (self) => {
+            document.querySelector("#interest-rate-text").innerText =
+                self.target.value + "%";
+            R = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // update loan period
+        loan_period_slider.addEventListener("input", (self) => {
+            document.querySelector("#loan-period-text").innerText =
+                self.target.value + " years";
+            N = parseFloat(self.target.value);
+            displayDetails();
+        });
+
+        // calculate total Interest payable
+        function calculateLoanDetails(p, r, emi) {
+            /*
+              p: principal
+              r: rate of interest
+              emi: monthly emi
+            */
+            let totalInterest = 0;
+            let yearlyInterest = [];
+            let yearPrincipal = [];
+            let years = [];
+            let year = 1;
+            let [counter, principal, interes] = [0, 0, 0];
+            while (p > 0) {
+                let interest = parseFloat(p) * parseFloat(r);
+                p = parseFloat(p) - (parseFloat(emi) - interest);
+                totalInterest += interest;
+                principal += parseFloat(emi) - interest;
+                interes += interest;
+                if (++counter == 12) {
+                    years.push(year++);
+                    yearlyInterest.push(parseInt(interes));
+                    yearPrincipal.push(parseInt(principal));
+                    counter = 0;
+                }
+            }
+            line.data.datasets[0].data = yearPrincipal;
+            line.data.datasets[1].data = yearlyInterest;
+            line.data.labels = years;
+            return totalInterest;
+        }
+
+        // calculate details
+        function displayDetails() {
+            let r = parseFloat(R) / 1200;
+            let n = parseFloat(N) * 12;
+
+            let num = parseFloat(P) * r * Math.pow(1 + r, n);
+            let denom = Math.pow(1 + r, n) - 1;
+            let emi = parseFloat(num) / parseFloat(denom);
+
+            let payabaleInterest = calculateLoanDetails(P, r, emi);
+
+            let opts = '{style: "decimal", currency: "US", mamimumFractionDigits:2 }';
+
+            document.querySelector("#cp").innerText =
+                parseFloat(P).toLocaleString("en-IN", opts) + " ₹";
+
+            document.querySelector("#ci").innerText =
+                parseFloat(payabaleInterest).toLocaleString("en-IN", opts) + " ₹";
+
+            document.querySelector("#ct").innerText =
+                parseFloat(parseFloat(P) + parseFloat(payabaleInterest)).toLocaleString(
+                    "en-IN",
+                    opts
+                ) + " ₹";
+
+            document.querySelector("#price").innerText =
+                parseFloat(emi).toLocaleString("en-IN", opts) + " ₹";
+
+            pie.data.datasets[0].data[0] = P;
+            pie.data.datasets[0].data[1] = payabaleInterest;
+            pie.update();
+            line.update();
+        }
+
+        // Initialize everything
+        function initialize() {
+            document.querySelector("#loan-amt-text").innerText =
+                parseInt(loan_amt_slider.value).toLocaleString("en-IN") + " ₹";
+            P = parseFloat(document.getElementById("loan-amount").value);
+
+            document.querySelector("#interest-rate-text").innerText =
+                int_rate_slider.value + "%";
+            R = parseFloat(document.getElementById("interest-rate").value);
+
+            document.querySelector("#loan-period-text").innerText =
+                loan_period_slider.value + " years";
+            N = parseFloat(document.getElementById("loan-period").value);
+
+            line = new Chart(document.getElementById("lineChart"), {
+                data: {
+                    datasets: [{
+                        type: "line",
+                        label: "Yearly Principal paid",
+                        borderColor: "rgb(54, 162, 235)",
+                        data: []
+                    }, {
+                        type: "line",
+                        label: "Yearly Interest paid",
+                        borderColor: "rgb(255, 99, 132)",
+                        data: []
+                    }],
+                    labels: []
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Yearly Payment Breakdown"
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                color: "grey",
+                                display: true,
+                                text: "Years Passed"
+                            }
+                        },
+                        y: {
+                            title: {
+                                color: "grey",
+                                display: true,
+                                text: "Money in Rs."
+                            }
+                        }
+                    }
+                }
+            });
+
+            pie = new Chart(document.getElementById("pieChart"), {
+                type: "doughnut",
+                data: {
+                    labels: ["Principal", "Interest"],
+                    datasets: [{
+                        label: "Home Loan Details",
+                        data: [0, 0],
+                        backgroundColor: ["rgb(247, 109, 43)", "rgb(24, 24, 24)"],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Payment Breakup"
+                        }
+                    }
+                }
+            });
+            displayDetails();
+        }
+        initialize();
+    </script>
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
